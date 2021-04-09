@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    volumes:
+      - mssqlsystem:/var/opt/mssql
+      - mssqluser:/var/opt/sqlserver
+    ports:
+      - 1433:1433
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "reallyStrongPwd123"
+
+
+volumes:
+  mssqluser:
+  mssqlsystem:
