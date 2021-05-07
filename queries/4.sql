@@ -1,0 +1,1 @@
+Select * FROM Improvement WHERE Assignee = 1

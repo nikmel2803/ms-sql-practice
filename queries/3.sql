@@ -1,0 +1,1 @@
+Select * FROM Complaint WHERE Person IN (SELECT ID FROM Person WHERE Department = 3)

@@ -1,0 +1,1 @@
+Select ID, Title, Person FROM Complaint WHERE Classroom IS NULL
